@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_primary_color">#000000</color>
+    <color name="background_color">#FF1744</color>
+    <color name="text_secondary_color">#FFFFFF</color>
+    <color name="progress_color_1">#FF1744</color>
+    <color name="track_color">#76FF03</color>
+</resources>

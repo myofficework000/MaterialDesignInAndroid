@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FloatingButtonSample</string>
+    <string name="actions">Actions</string>
+    <string name="string_add_action_floating_message">Add new actions from this button</string>
+    <string name="add_email">Add new email</string>
+    <string name="add_call">Add new call</string>
+    <string name="add_location">Add new location</string>
+    <string name="add_alarm">Add new alarm</string>
+</resources>

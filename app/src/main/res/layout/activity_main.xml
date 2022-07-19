@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25dp"
+        android:layout_marginBottom="@dimen/_25dp"
+        android:fontFamily="monospace"
+        android:text="@string/add_email"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="@dimen/_25sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab_alarm" />
+
+    <TextView
+        android:id="@+id/txtCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25dp"
+        android:layout_marginBottom="@dimen/_25dp"
+        android:fontFamily="monospace"
+        android:text="@string/add_call"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="@dimen/_25sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toTopOf="@+id/fab_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab_alarm" />
+
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25dp"
+        android:layout_marginBottom="@dimen/_25dp"
+        android:fontFamily="monospace"
+        android:text="@string/add_location"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="@dimen/_25sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab_alarm" />
+
+    <TextView
+        android:id="@+id/txtAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25dp"
+        android:layout_marginBottom="@dimen/_25dp"
+        android:fontFamily="monospace"
+        android:text="@string/add_alarm"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="@dimen/_25sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab_alarm" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:contentDescription="@string/string_add_action_floating_message"
+        android:text="@string/actions"
+        android:textColor="@color/text_primary_color"
+        app:icon="@drawable/ic_baseline_add_circle_24"
+        app:iconTint="@color/text_primary_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:backgroundTint="@color/background_color"
+        android:src="@drawable/ic_baseline_add_alarm_24"
+        android:tint="@color/text_primary_color"
+        android:tintMode="multiply"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:backgroundTint="@color/background_color"
+        android:src="@drawable/ic_baseline_add_location_24"
+        android:tint="@color/text_primary_color"
+        android:tintMode="multiply"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_alarm"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:backgroundTint="@color/background_color"
+        android:src="@drawable/ic_baseline_add_ic_call_24"
+        android:tint="@color/text_primary_color"
+        android:tintMode="multiply"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_location"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:backgroundTint="@color/background_color"
+        android:src="@drawable/ic_baseline_email_24"
+        android:tint="@color/text_primary_color"
+        android:tintMode="multiply"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_call"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:indeterminate="true"
+        app:trackColor="@color/track_color"
+        app:trackThickness="@dimen/_15dp"
+        app:indeterminateAnimationType="disjoint"
+        app:indicatorDirectionLinear="rightToLeft"
+        android:indeterminateDuration="@integer/material_motion_duration_long_2"
+        android:progressTint="#D3ED3C"
+        app:indicatorColor="@color/progress_color_1"
+        app:trackCornerRadius="@dimen/_50dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/circularProgressBar"
+        android:layout_width="@dimen/_90dp"
+        android:layout_height="@dimen/_90dp"
+        android:layout_marginTop="@dimen/_25dp"
+        android:indeterminate="true"
+        app:indicatorColor="@color/progress_color_1"
+        app:indicatorDirectionCircular="clockwise"
+        app:indicatorSize="@dimen/_90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressBar"
+        app:trackColor="@color/track_color"
+        app:trackThickness="@dimen/_5dp" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/circularProgressBar2"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_40dp"
+        android:indeterminate="true"
+        app:indicatorColor="@color/track_color"
+        app:indicatorDirectionCircular="counterclockwise"
+        app:indicatorSize="@dimen/_50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressBar"
+        app:trackColor="@color/progress_color_1"
+        app:trackThickness="@dimen/_15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
